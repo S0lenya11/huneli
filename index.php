@@ -1,11 +1,3 @@
-[build]
-command = "pm run build" publish="/build"
-base ="/"
-[[redirects]]
-from = "/*"
-to = "/index. html"
-status = 200
-
 <!DOCTYPE html>
 <html>
 <head>
