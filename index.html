@@ -108,16 +108,20 @@
         <h2 class="post-title">Dürüm Yemek İçin Lütfen Randevu Alınız.</h2>
         <div class="post-date">Cuma ve hafta sonları tercih edilir.</div>
         <div class="post-content">
-          <head>
-            <title>Countdown</title>
-            <script src="/sayac.js" defer></script>
-          </head>
 
-          <button class="button">Randevu Al!</button>
-
-          <!-- create a date input element that allows the user to select a date and time -->
-          <input type="datetime-local">
-        
-          <!-- create an element to display the countdown -->
-          <p id="countdown"></p>
-        
+          
+          <html>
+            <head>
+              <title>Countdown</title>
+            </head>
+            <body>
+              <h1>Countdown</h1>
+              <p>
+                The countdown is: <span id="countdown"></span>
+              </p>
+          
+              <button id="startButton">Start Countdown</button>
+          
+              <script src="countdown.js"></script>
+            </body>
+          </html>
