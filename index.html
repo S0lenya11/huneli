@@ -3,271 +3,60 @@
     <!--<link rel="stylesheet" href="a.css">-->
     <link rel="stylesheet" href="/anasayfa.php">
     <meta charset="utf-8">
-  </head>
-  <style>
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
-  }
-  /* Navbar links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Navbar links on mouse-over */
-  .topnav a:hover {
-    background-color: #008e49;
-    color: black;
-  }
-  
-  /* Active/current link */
-  .topnav a.active {
-    background-color: #f5fffa;
-    color: white;
-  }
-  </style>
-  <div class="topnav">
-    <a href="https://www.teknofest.org/tr/competitions/competition/44" target="_blank">Tubitak Efficiency Challenge</a>
-    <a href="https://www.makethefuture.shell/en-gb/shell-eco-marathon" target="_blank">Shell Eco Marathon</a>
-  </div>
-  <div class="header">
-    <h2>Groupe Sankey</h2>
-    <div class="logo">
-    <img src="assets/araba/sankey_logo.jpg" width="200" height="200"img/>
-  </div>
-  </div>
-  
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card" style="margin-top: 20px;">
-        
-        <h2>Biz Kimiz?</h2>
-        <p>Farklı yaş, disiplin ve ilgi alanlarına sahip kişilerin bir araya 
-          gelerek hayallerini gerçekleştirmek ve farklılık yaratmak üzere 
-          toplandığı bir grup liseli öğrencileriz..</p>  
-      </div>
-      <div class="card">
-        <h2>Ne Yapmak İstiyoruz</h2>
-        <p>Daha temiz ve sürdürülebilir bir gelecek yaratma hedefinde
-          ilerleyen takımımız, çalışmalarını yoğun bir araştırma ve öğrenme
-          süreciyle ilerletmektedir.  Hayalimizdeki geleceğe; Avrupa'nın
-          enerji verimliliği ve sürdürülebilirliği en yüksek, gelişmiş
-          bir yapay zekaya sahip, aynı zamanda da çevre dostu olup
-          yarışmalara katılabilecek, "farklı" bir elektrikli araç
-          tasarlayarak katkıda bulunmak istiyoruz.</p>
-      </div>
-      <div class="card">
-        <h3>İletişim Bilgilerimiz:</h3>
-        <p>www.araba.ga</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="footer">
-    <h2></h2>
-  </div>
-  
-  
-  <!--
-  <!DOCTYPE html>
-  <html lang="tr">
-    <head>
-      <link rel="stylesheet" href="/css/araba.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <meta name="description" content="Teknofest Araba">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="url" content="Teknofest Araba">
-      <meta name="author" content="Cezeri Team">
-      <meta name="msapplication-TileColor" content="#050200">
-      <meta name="theme-color" content="#050200">
-      <title>Teknofest-Araba-AnaSayfa</title>
-    </head>
-  <style>
-    
-  /* Style the header */
-  .header {
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-  }
-  
-  /* Create three unequal columns that floats next to each other */
-  .column {
-    float: left;
-    padding: 10px;
-    /* height: 800px; Should be removed. Only for demonstration */
-  }
-  
-  /* Left and right column */
-  .column.side {
-    width: 25%;
-  }
-  
-  /* Middle column */
-  .column.middle {
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the footer */
-  .footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
-  }
-    
-    
-    
-    
-  .flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-  }
-  
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  .flip-box-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
-    
-    
-    </style>
-  
-      
-      
-      
-      
-    <body>   
-  <div class="w3-bar w3-dark-grey">
-    <a class="w3-bar-item w3-button" href="https://araba.ga">Ana sayfa</a>
-    <a class="w3-bar-item w3-button" href="#temel-ilkeler">Temel İlkeler</a>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button">≡</button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a class="w3-bar-item w3-button" href="#vergi">Vergilendirme</a>
-        <a href="/oda3.php" class="w3-bar-item w3-button">Oda 3</a>
-        <a href="/muradiye.php" class="w3-bar-item w3-button">Muradiye</a>
-        <a href="/haber.php" class="w3-bar-item w3-button">Haber</a>
-      </div>
-    </div>
-  </div>
-      
-     
-  <div class="header">
-    <h2>Hakkımızda</h2>
-  </div> 
-     
-      
-  <h5>
-  <div class="row">
-    <div class="column side" style="background-color:#aaa;">Bölüm
-    <h2 id="temel-ilkeler">Temel İlkeler</h2>
-    <br>
-  <br>
-  <br>
-  
-    </div>
-    <div class="column middle" style="background-color:#bbb;">Bölüm
-      <b>Cezeri Software 2019'dan beri aktif olan bir yazılım oluşumudur.
-  Son zamanlarda oyun geliştiriciliği ile ilgilenmektedir. Cezeri Software 2019'dan beri aktif olan bir yazılım oluşumudur.
-  
-    </div>
-  </div>
-  </h5>    
-    
-  <div class="header">
-    <h2>Vizyonumuz</h2>
-  </div> 
-  
-  
-  <h5>
-    <div class="column middle" style="background-color:#bbb;">Bölüm
-      <b>Cezeri Software 2019'dan beri aktif olan bir yazılım oluşumudur.
-  Son zamanlarda oyun geliştiriciliği ile ilgilenmektedir. Cezeri Software 2019'dan beri aktif olan bir yazılım oluşumudur.
-        
-  <div class="flip-box">
-    <div class="flip-box-inner">
-      <div class="flip-box-front">
-        <h2>Front Side</h2>
-      </div>
-      <div class="flip-box-back">
-        <h2>Back Side</h2>
-      </div>
-    </div>
-  </div>
-        
-    </div>
-      
-    <div class="column side" style="background-color:#bbb;">Bölüm
-      <b>Cezeri Software 2019'dan beri aktif olan bir yazılım oluşumudur.
-  Son zamanlarda oyun geliştiriciliği ile ilgilenmektedir. Cezeri Software 2019'dan beri aktif olan bir yazılım oluşumudur.
-  
-    </div>
-  
-  </div>
-  </h5>    
-    
-   <div class="footer">
-    <p><a href="https://araba.ga">Cezeri Software</a> © 2019-2022</p>
-    <p>SANOKSİM © 2021-2022</p>
-  </div>
-      
-  <footer>
-        </footer>
-  </html>
-   -->
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown</title>
+</head>
+<body>
+  <!-- create a button element -->
+  <button>Select Date</button>
+
+  <!-- create a date input element -->
+  <input type="date">
+
+  <!-- create an element to display the countdown -->
+  <p id="countdown"></p>
+
+  <!-- include the JavaScript code in a script tag -->
+  <script>
+    // create a reference to the button and date input elements
+    var button = document.querySelector("button");
+    var dateInput = document.querySelector("input[type=date]");
+
+    // when the button is clicked, prompt the user to select a date
+    button.onclick = function() {
+      // store the selected date in a variable
+      var selectedDate = dateInput.value;
+
+      // create a new Date object from the selected date
+      var targetDate = new Date(selectedDate);
+
+      // get the current date and time
+      var currentDate = new Date();
+
+      // calculate the time difference between the current date and the target date
+      var timeDiff = targetDate - currentDate;
+
+      // convert the time difference from milliseconds to seconds
+      var timeDiffInSeconds = timeDiff / 1000;
+
+      // create a new interval that will update the countdown every second
+      var interval = setInterval(function() {
+        // decrease the time difference by one second
+        timeDiffInSeconds--;
+
+        // update the countdown on the page
+        document.getElementById("countdown").innerHTML = timeDiffInSeconds + " seconds remaining";
+
+        // if the countdown is finished, clear the interval and show a message
+        if (timeDiffInSeconds <= 0) {
+          clearInterval(interval);
+          document.getElementById("countdown").innerHTML = "Countdown finished!";
+        }
+      }, 1000);
+    };
+  </script>
+</body>
+</html>
