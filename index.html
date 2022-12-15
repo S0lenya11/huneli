@@ -1,9 +1,9 @@
-
 <head>
     <!--<link rel="stylesheet" href="a.css">-->
     <link rel="stylesheet" href="/anasayfa.php">
     <meta charset="utf-8">
 </head>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,10 +11,10 @@
 </head>
 <body>
   <!-- create a button element -->
-  <button>Select Date</button>
+  <button>Dürüm Yemek İçin Lütfen Randevu Tarihi Belirleyiniz</button>
 
-  <!-- create a date input element -->
-  <input type="date">
+  <!-- create a date input element that allows the user to select a date and time -->
+  <input type="datetime-local">
 
   <!-- create an element to display the countdown -->
   <p id="countdown"></p>
@@ -23,7 +23,7 @@
   <script>
     // create a reference to the button and date input elements
     var button = document.querySelector("button");
-    var dateInput = document.querySelector("input[type=date]");
+    var dateInput = document.querySelector("input[type=datetime-local]");
 
     // when the button is clicked, prompt the user to select a date
     button.onclick = function() {
@@ -44,17 +44,29 @@
 
       // create a new interval that will update the countdown every second
       var interval = setInterval(function() {
-        // decrease the time difference by one second
-        timeDiffInSeconds--;
+        // calculate the number of days remaining
+        var daysRemaining = Math.floor(timeDiffInSeconds / (3600 * 24));
+
+        // calculate the number of hours remaining, after subtracting the number of days
+        var hoursRemaining = Math.floor((timeDiffInSeconds - (daysRemaining * 3600 * 24)) / 3600);
+
+        // calculate the number of minutes remaining, after subtracting the days and hours
+        var minutesRemaining = Math.floor((timeDiffInSeconds - (daysRemaining * 3600 * 24) - (hoursRemaining * 3600)) / 60);
+
+        // calculate the number of seconds remaining, after subtracting the days, hours, and minutes
+        var secondsRemaining = Math.floor(timeDiffInSeconds - (daysRemaining * 3600 * 24) - (hoursRemaining * 3600) - (minutesRemaining * 60));
 
         // update the countdown on the page
-        document.getElementById("countdown").innerHTML = timeDiffInSeconds + " seconds remaining";
+        document.getElementById("countdown").innerHTML = daysRemaining + " days, " + hoursRemaining + " hours, " + minutesRemaining + " minutes, and " + secondsRemaining + " seconds remaining";
 
         // if the countdown is finished, clear the interval and show a message
         if (timeDiffInSeconds <= 0) {
           clearInterval(interval);
           document.getElementById("countdown").innerHTML = "Countdown finished!";
         }
+
+        // decrease the time difference by one second
+        timeDiffInSeconds--;
       }, 1000);
     };
   </script>
