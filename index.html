@@ -5,21 +5,100 @@
 </head>
 
 <!DOCTYPE html>
-<!--sayac-->
 <html>
 <head>
-  <script src="/sayac.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+    }
+    header {
+      position: relative;
+      background-image: ;
+      background-size: cover;
+      background-position: center center;
+      height: 500px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 48px;
+      text-align: center;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0 20px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      margin-top: 30px;
+    }
+    .post {
+      margin-bottom: 30px;
+    }
+    .post-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .post-date {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+    .post-content {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
-  <!-- create a button element -->
-  <button>Dürüm Yemek İçin Lütfen Randevu Tarihi Belirleyiniz</button>
+  <header>
+    <div class="container">
+      <h1>My Personal Blog</h1>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="post">
+        <h2 class="post-title">My First Post</h2>
+        <div class="post-date">January 1, 2020</div>
+        <div class="post-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Aliquam non est quis sem varius condimentum. Duis in
+          ornare velit. Aliquam vel nisl vel velit dignissim
+          fringilla quis eget libero. Etiam ac arcu sed
 
-  <!-- create a date input element that allows the user to select a date and time -->
-  <input type="datetime-local">
-
-  <!-- create an element to display the countdown -->
-  <p id="countdown"></p>
-
-  <!-- include the JavaScript code in a script tag -->
-</body>
-</html>
