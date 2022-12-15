@@ -7,7 +7,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
   <style>
     body {
       margin: 0;
@@ -16,7 +15,7 @@
     }
     header {
       position: relative;
-      background-image: ;
+      background-image: url('fotos/background.jpeg');
       background-size: cover;
       background-position: center center;
       height: 500px;
@@ -77,16 +76,23 @@
       padding-top: 20px;
       border-top: 1px solid #ccc;
     }
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
   </style>
-=======
-  <title>Countdown</title>
-  <script src="/sayac.js" defer></script>
->>>>>>> parent of 7864302 (durum gayet iyi)
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>My Personal Blog</h1>
+      <h1>naber?</h1>
+      
     </div>
   </header>
   <nav>
@@ -99,11 +105,19 @@
   <main>
     <div class="container">
       <div class="post">
-        <h2 class="post-title">My First Post</h2>
-        <div class="post-date">January 1, 2020</div>
+        <h2 class="post-title">Dürüm Yemek İçin Lütfen Randevu Alınız.</h2>
+        <div class="post-date">Cuma ve hafta sonları tercih edilir.</div>
         <div class="post-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Aliquam non est quis sem varius condimentum. Duis in
-          ornare velit. Aliquam vel nisl vel velit dignissim
-          fringilla quis eget libero. Etiam ac arcu sed
+          <head>
+            <title>Countdown</title>
+            <script src="/sayac.js" defer></script>
+          </head>
 
+          <button class="button">Randevu Al!</button>
+
+          <!-- create a date input element that allows the user to select a date and time -->
+          <input type="datetime-local">
+        
+          <!-- create an element to display the countdown -->
+          <p id="countdown"></p>
+        
