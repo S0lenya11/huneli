@@ -16,6 +16,38 @@
 }
 </style>
 </head>
+<table id="name-table">
+    <tr>
+      <th>Name</th>
+    </tr>
+  </table>
+  <form id="name-form">
+    <label for="name">Enter your name:</label><br>
+    <input type="text" id="name"><br>
+    <button type="submit">Submit</button>
+  </form> 
+  <script>
+  document.getElementById("name-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent the form from submitting
+  
+    // get the name from the form
+    var name = document.getElementById("name").value;
+  
+    // get the table element
+    var table = document.getElementById("name-table");
+  
+    // create a new row and cell for the name
+    var row = table.insertRow();
+    var cell = row.insertCell();
+  
+    // set the cell content to the name
+    cell.innerHTML = name;
+  });
+</script>
+  
+
+
+
 <form name="contact" method="POST" data-netlify="true">
     <p>
       <label>Your Name: <input type="text" name="name" /></label>
